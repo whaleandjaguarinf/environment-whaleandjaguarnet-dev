@@ -1,8 +1,12 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
 cluster:
   clusterName: ""
   environmentGitOwner: ""
   environmentGitPublic: true
   project: ""
+  azure: {}
   provider: gke
   zone: ""
 gitops: true

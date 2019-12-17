@@ -1,7 +1,7 @@
 
 ## Jenkins X Boot Configuration
 
-This repository contains the source code for [Jenkins X Boot configuration](https://jenkins-x.io/getting-started/boot/) so that you can setup, upgrade or configure your Jenkins X installation via GitOps.
+This repository contains the source code for [Jenkins X Boot configuration](https://jenkins-x.io/docs/getting-started/setup/boot/) so that you can setup, upgrade or configure your Jenkins X installation via GitOps.
 
 ## How to install...
 
@@ -15,6 +15,15 @@ This repository contains the source code for [Jenkins X Boot configuration](http
 Create a fork of this git repository on github. We suggest renaming it to match the pattern `environment-<cluster name>-dev`. To rename your repository go to the repository settings in github. 
 
 Clone your newly forked git repository:
+
+```
+git clone https://github.com/<org>/environment-<cluster name>-dev && cd environment-<cluster name>-dev
+```
+ 
+> It's important that you cd into your newly checked out git repo, otherwise `jx boot` will use the upstream Jenkins X boot
+configuration.
+
+Now, in the checkout, run:
 
 ```
 git clone https://github.com/<org>/environment-<cluster name>-dev && cd environment-<cluster name>-dev

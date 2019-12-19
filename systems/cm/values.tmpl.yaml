@@ -1,8 +1,0 @@
-cert-manager:
-  enabled: {{ .Requirements.ingress.tls.enabled }}
-  rbac:
-    create: true
-  webhook:
-    enabled: false
-webhook:
-  enabled: false

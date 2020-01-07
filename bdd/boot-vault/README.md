@@ -1,1 +1,1 @@
-## BDD test using JX Boot with Vault and long term storage
+## BDD test using JX Boot with Vault secrets

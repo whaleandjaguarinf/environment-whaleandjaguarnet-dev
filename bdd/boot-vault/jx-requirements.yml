@@ -1,5 +1,5 @@
 cluster:
-  clusterName: bdd-boot-v
+  clusterName: bdd-boot-vault
   environmentGitOwner: jenkins-x-bot-test
   project: jenkins-x-bdd3
   provider: gke
@@ -11,36 +11,32 @@ environments:
   - key: staging
     owner: ""
     repository: ""
-    ingress:
-      tls:
-        enabled: false
   - key: production
     owner: ""
     repository: ""
     ingress:
-      tls:
-        enabled: false
-gitops: false
-ingress:
-  domain: boot.bdd.jenkins-x.rocks
-  externalDNS: true
-  namespaceSubDomain: -jx.
+  domain: ""
+  externalDNS: false
   tls:
-    email: jenkins-x@googlegroups.com
-    enabled: true
-    production: true
+    email: ""
+    enabled: false
+    production: false
 kaniko: true
 secretStorage: vault
+repository: nexus
 storage:
   logs:
-    enabled: true
-    url: "gs://jx-bdd-log-store3"
+    enabled: false
+    url: ""
   reports:
-    enabled: true
-    url: "gs://jx-bdd-log-store3"
-vault:
-  disableURLDiscovery: true
+    enabled: false
+    url: ""
+  repository:
+    enabled: false
+    url: ""
 versionStream:
   ref: "master"
   url: https://github.com/jenkins-x/jenkins-x-versions.git
+vault:
+  disableURLDiscovery: true
 webhook: prow

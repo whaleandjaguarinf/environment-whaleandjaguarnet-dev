@@ -1,5 +1,5 @@
 clusters:
-  - name: bdd-boot-v
+  - name: boot-vault
     args:
       - create
       - cluster

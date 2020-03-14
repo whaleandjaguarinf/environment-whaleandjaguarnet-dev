@@ -1,6 +1,7 @@
 apiVersion: v1
+appVersion: 2.0.1242+cjxd.8
 description: ACME Chart
 maintainers:
 - name: Team
 name: acme
-version: "1"
+version: 2.0.1242+cjxd.8
